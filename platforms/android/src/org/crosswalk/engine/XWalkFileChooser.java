@@ -129,6 +129,8 @@ public class XWalkFileChooser {
             extraIntents.add(camcorder);
             extraIntents.add(soundRecorder);
             contentSelectionIntent.setType(ANY_TYPES);
+        } else {
+            contentSelectionIntent.setType(ANY_TYPES);
         }
 
         Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
